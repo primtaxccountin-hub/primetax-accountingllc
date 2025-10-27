@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prime Tax & Accounting — ITIN, LLC, Passport, Taxes, Consular Docs</title>
+  <meta name="description" content="ITIN, Passport Renewal, EIN, LLC. Multilingual service (English, Portuguese, Spanish). Over 20 years of experience. WhatsApp support." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #c8a84a;
+      --black: #181818;
+      --white: #fff;
+      --muted: #bdbdbd;
+      --accent: #efd89a;
+      --card: #232323;
+      --radius: 17px;
+      --max-width: 1200px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: var(--muted);
+      background: linear-gradient(180deg, #101010 0%, #232323 100%);
+    }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #181818 0%, #232323 100%);
+      min-height: 100vh;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 16px 0 16px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 28px;
+      border-bottom: 2px solid rgba(200,168,74,0.16);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .logo {
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 25% 20%, rgba(200,168,74,0.12), transparent), linear-gradient(180deg,#232323,#181818);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.3), inset 0 -4px 10px rgba(0,0,0,0.35);
+    }
+    .logo h1 {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      color: var(--gold);
+      letter-spacing:2px;
+    }
+    .company-name {
+      font-size: 34px;
+      font-weight: 800;
+      color: var(--gold);
+      font-family: 'Playfair Display', serif;
+      letter-spacing:2px;
+      text-shadow: 1px 1px 8px #181818;
+    }
+    .company-tag {
+      font-size: 16px;
+      color: var(--muted);
+      font-weight: 500;
+      margin-top: 2px;
+    }
+    nav {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 700;
+      padding: 12px 22px;
+      border-radius: 12px;
+      transition: background 0.2s;
+    }
+    nav a.cta {
+      background: linear-gradient(90deg,var(--gold),var(--accent));
+      color: #111;
+      font-weight: 900;
+      border: none;
+    }
+    nav a:hover {
+      background: rgba(200,168,74,0.13);
+      color: var(--gold);
+    }
+    .hero {
+      display: flex;
+      flex-direction: row;
+      gap: 36px;
+      margin-top: 36px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .hero-message {
+      flex: 1;
+      min-width: 320px;
+    }
+    .hero-message h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 46px;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .hero-message p {
+      font-size: 20px;
+      color: var(--muted);
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .hero-message .cta-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--gold), var(--accent));
+      color: #181818;
+      padding: 15px 32px;
+      font-weight: 900;
+      border-radius: 17px;
+      text-decoration: none;
+      font-size: 20px;
+      margin-top: 16px;
+      box-shadow:0 2px 12px rgba(200,168,74,0.13);
+    }
+    .whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25d366;
+      color: #fff;
+      font-weight: 800;
+      font-size: 22px;
+      padding: 12px 28px;
+      border-radius: 13px;
+      text-decoration: none;
+      margin-top: 28px;
+      box-shadow: 0 2px 14px rgba(37,211,102,0.18);
+    }
+    .whatsapp span {
+      font-size: 25px;
+    }
+    .hero-image {
+      flex:1;
+      min-width: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-image img {
+      border-radius:20px;
+      max-width:390px;
+      box-shadow:0 4px 22px rgba(0,0,0,0.18);
+      margin-top:20px;
+      border:3px solid var(--gold);
+      background: #fff;
+    }
+    .languages-bar {
+      margin-top: 12px;
+      font-size: 18px;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing:1px;
+    }
+    .services-section {
+      margin-top: 54px;
+    }
+    .services-section h3 {
+      font-family:'Playfair Display',serif;
+      color: var(--gold);
+      font-size: 34px;
+      margin-bottom: 20px;
+      letter-spacing:1px;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .service-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 34px 28px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.17);
+      border: 1px solid rgba(200,168,74,0.07);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom:10px;
+    }
+    .service-title {
+      font-size: 26px;
+      color: var(--gold);
+      font-family:'Playfair Display',serif;
+      font-weight:800;
+      margin:0 0 8px 0;
+      letter-spacing:1px;
+    }
+    .service-desc {
+      font-size: 18px;
+      color: var(--white);
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    .service-price {
+      font-size: 22px;
+      color: #25d366;
+      font-weight: 900;
+      margin-top: 8px;
+      background: #181818;
+      border-radius:8px;
+      padding: 7px 18px;
+      display:inline-block;
+      letter-spacing:1px;
+    }
+    .details-section {
+      margin-top: 60px;
+      margin-bottom: 36px;
+    }
+    .details-section h4 {
+      color: var(--gold);
+      font-size: 30px;
+      font-family:'Playfair Display',serif;
+      margin-bottom: 18px;
+    }
+    .details-section p {
+      font-size: 19px;
+      color: var(--white);
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    .messages-section {
+      margin-top: 50px;
+      padding: 40px 0;
+      border-top: 1px solid rgba(200,168,74,0.18);
+      border-bottom: 1px solid rgba(200,168,74,0.18);
+      background: linear-gradient(90deg, #232323 70%, #181818 100%);
+      border-radius: 18px;
+    }
+    .messages-section h3 {
+      color: var(--gold);
+      font-size: 32px;
+      margin-bottom: 18px;
+      font-family:'Playfair Display',serif;
+    }
+    .messages-list {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      color: var(--white);
+      font-size: 21px;
+      margin-bottom: 8px;
+      font-weight:600;
+    }
+    .messages-list li {
+      padding: 14px;
+      background: rgba(200,168,74,0.08);
+      border-radius: 13px;
+      font-weight: 600;
+    }
+    .years-experience {
+      margin-top: 24px;
+      font-size: 21px;
+      color: var(--gold);
+      font-family:'Playfair Display',serif;
+      font-weight:900;
+      letter-spacing:1px;
+      background: #232323;
+      display:inline-block;
+      padding: 7px 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(200,168,74,0.10);
+    }
+    footer {
+      margin-top: 80px;
+      padding: 42px 0 20px 0;
+      background: #181818;
+      color: var(--muted);
+    }
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+      align-items: center;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .footer-section {
+      flex:1;
+      min-width: 220px;
+    }
+    .footer-section h5 {
+      color: var(--gold);
+      font-size: 23px;
+      margin-bottom: 12px;
+      font-family:'Playfair Display',serif;
+    }
+    a {
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: var(--gold);
+    }
+    @media (max-width:1000px){
+      .service-grid { grid-template-columns:1fr; }
+      .hero { flex-direction: column; gap:22px;}
+      .hero-image img {max-width:98vw;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <h1>PT</h1>
+        </div>
+        <div>
+          <div class="company-name">Prime Tax & Accounting</div>
+          <div class="company-tag">IRS Certified Acceptance Agent (CAA-8752149)</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#details">Details</a>
+        <a href="#messages">Why Us</a>
+        <a href="#contact" class="cta">WhatsApp</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-message">
+        <h2>Your Trusted Tax & Business Partner in the US</h2>
+        <p>
+          💼 ITIN • Taxes • LLC • Passport • Consular Docs 🇺🇸🇧🇷🇪🇸 <br>
+          We speak English, Português & Español.<br>
+          Over <span style="color:var(--gold);font-weight:700">20 years of experience</span> helping individuals and businesses navigate U.S. paperwork.<br>
+          At <span style="color:var(--gold);font-weight:800">Prime Tax & Accounting</span>, we ensure your tax returns, business registrations, and documents are handled quickly, securely, and professionally.
+        </p>
+        <div class="languages-bar">English • Portuguese • Spanish service available</div>
+        <a class="cta-btn" href="#services">See Our Services</a><br>
+        <a class="whatsapp" href="https://wa.me/14343972396?text=Hello%20Prime%20Tax%2C%20I%20want%20to%20schedule%20a%20consultation">
+          <span>📲</span> WhatsApp: +1 (434) 397-2396
+        </a>
+        <div class="years-experience">20+ Years of Experience</div>
+      </div>
+      <div class="hero-image">
+        <img src="https://files.fm/thumb_show.php?i=ak7en96uhu" alt="Prime Tax & Accounting main image">
+      </div>
+    </section>
+    <section id="services" class="services-section">
+      <h3>Our Main Services</h3>
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-title">ITIN Number Application</div>
+          <div class="service-desc">The ITIN (Individual Taxpayer Identification Number) is required for those who need a U.S. taxpayer ID but are not eligible for a Social Security Number. We help you apply, renew, and submit all documents to the IRS, with multilingual guidance and fast processing.</div>
+          <div class="service-price">$150</div>
+        </div>
+        <div class="service-card">
+          <div class="service-title">Passport Renewal</div>
+          <div class="service-desc">Renew your passport 100% online — no appointments, no travel. Our team reviews your documents, guides you through the process, and ensures fast, secure submission. Avoid delays and unnecessary complications.</div>
+          <div class="service-price">$250</div>
+        </div>
+        <div class="service-card">
+          <div class="service-title">Tax Preparation & Filing</div>
+          <div class="service-desc">Complete tax preparation for individuals and businesses. Fast electronic filing, IRS-compliant extensions, year-round support, and refund maximization. Stay fully compliant and stress-free.</div>
+          <div class="service-price">Contact Us</div>
+        </div>
+        <div class="service-card">
+          <div class="service-title">LLC & Corporation Formation</div>
+          <div class="service-desc">Start and grow your company in the U.S. We handle LLC or Corp registration, EIN application, Operating Agreements, Registered Agent, and full consulting for business success.</div>
+          <div class="service-price">Contact Us</div>
+        </div>
+        <div class="service-card">
+          <div class="service-title">Consular Documents</div>
+          <div class="service-desc">Preparation of consular documents, translations, notarizations, and protocols for embassies and consulates. Multilingual support included.</div>
+          <div class="service-price">Contact Us</div>
+        </div>
+      </div>
+    </section>
+    <section id="details" class="details-section">
+      <h4>Service Details & Benefits</h4>
+      <p><strong>ITIN Number:</strong> Fast and secure application or renewal. Needed for tax filing, opening U.S. bank accounts, loans, financial history, and for dependents on tax returns. Document review, IRS submission, and ongoing support.</p>
+      <p><strong>Passport Renewal:</strong> Fully online process, no appointments, accurate document review, and step-by-step guidance. Personalized support to avoid delays.</p>
+      <p><strong>Tax Preparation:</strong> Individual and business tax returns. E-filing, extensions, refund maximization, penalty avoidance. Open all year for your support.</p>
+      <p><strong>LLC/Corp Formation:</strong> Fast registration, EIN application, entity choice guidance, agent service, operating agreement/bylaws, and business tax planning.</p>
+      <p><strong>Consular Docs:</strong> All consular paperwork, translations, notarizations, and protocols — handled by our multilingual team.</p>
+    </section>
+    <section id="messages" class="messages-section">
+      <h3>Why Choose Prime Tax & Accounting?</h3>
+      <ul class="messages-list">
+        <li>✅ 20+ years in business — trusted experts for U.S. paperwork</li>
+        <li>✅ Multilingual support: English, Portuguese, Spanish</li>
+        <li>✅ Certified IRS Acceptance Agent — your documents are handled by professionals</li>
+        <li>✅ Fast service: Most protocols issued same day</li>
+        <li>✅ WhatsApp support for instant communication</li>
+        <li>✅ Transparent pricing: ITIN $150, Passport Renewal $250 — no hidden fees</li>
+        <li>✅ All U.S. states covered</li>
+        <li>✅ Personalized consulting for every client</li>
+        <li>✅ Complete confidentiality & security</li>
+        <li>✅ We turn complex bureaucracy into peace of mind!</li>
+      </ul>
+      <a class="whatsapp" href="https://wa.me/14343972396?text=Hello%20Prime%20Tax%2C%20I%20want%20to%20schedule%20a%20consultation">
+        <span>📲</span> WhatsApp: +1 (434) 397-2396
+      </a>
+    </section>
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h5>Prime Tax & Accounting</h5>
+          <div>IRS Certified Acceptance Agent (CAA-8752149)</div>
+          <div>Serving all United States</div>
+        </div>
+        <div class="footer-section">
+          <h5>Contact</h5>
+          <div>Email: primetax@support.com</div>
+          <div>WhatsApp: <a href="https://wa.me/14343972396?text=Hello%20Prime%20Tax" style="color:#25d366;font-weight:800">+1 (434) 397-2396</a></div>
+          <div>Hours: 09:00 — 22:00 (EST)</div>
+        </div>
+        <div class="footer-section">
+          <h5>Languages</h5>
+          <div>English • Portuguese • Spanish</div>
+        </div>
+      </div>
+      <div style="margin-top:22px;text-align:center;font-size:13px;color:rgba(255,255,255,0.15)">© Prime Tax & Accounting — All Rights Reserved.</div>
+    </footer>
+  </div>
+</body>
+  </html>
